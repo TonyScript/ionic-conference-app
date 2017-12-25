@@ -25,9 +25,11 @@ import { SpeakerListPage } from '../pages/speaker-list/speaker-list';
 import { TabsPage } from '../pages/tabs-page/tabs-page';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { SupportPage } from '../pages/support/support';
+import { TestingPage } from '../pages/testing/testing';
 
 import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
+
 
 
 @NgModule({
@@ -46,7 +48,8 @@ import { UserData } from '../providers/user-data';
     SpeakerListPage,
     TabsPage,
     TutorialPage,
-    SupportPage
+    SupportPage,
+    TestingPage
   ],
   imports: [
     BrowserModule,
@@ -65,7 +68,8 @@ import { UserData } from '../providers/user-data';
         { component: SupportPage, name: 'SupportPage', segment: 'support' },
         { component: LoginPage, name: 'LoginPage', segment: 'login' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
-        { component: SignupPage, name: 'SignupPage', segment: 'signup' }
+        { component: SignupPage, name: 'SignupPage', segment: 'signup' },
+        { component: TestingPage, name: 'TestingPage', segment: 'testing' }
       ]
     }),
     IonicStorageModule.forRoot()
@@ -86,7 +90,8 @@ import { UserData } from '../providers/user-data';
     SpeakerListPage,
     TabsPage,
     TutorialPage,
-    SupportPage
+    SupportPage,
+    TestingPage
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
